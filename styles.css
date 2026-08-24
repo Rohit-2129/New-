@@ -23,11 +23,11 @@ body{
 }
 
 /* ── phone frame ─────────────────────────────────────────── */
-.stage{display:grid;place-items:center;width:100%;height:100dvh}
+.stage{display:grid;place-items:center;width:100%;height:100vh;height:100dvh}
 .phone{
   position:relative;
   width:min(375px,100vw);
-  height:min(812px,100dvh);
+  height:min(812px,100vh);height:min(812px,100dvh);
   border-radius:48px;overflow:hidden;
   box-shadow:
     0 0 0 1px rgba(255,255,255,.06),
@@ -236,8 +236,9 @@ body{
   color:rgba(255,255,255,.5);
   font:700 9.5px var(--f-head);letter-spacing:.26em;text-transform:uppercase;text-indent:.26em;
   transition:opacity .5s var(--ease),transform .5s var(--ease);
-  animation:bob 2.2s ease-in-out infinite;pointer-events:none;
+  pointer-events:none;
 }
+.scroll-hint svg{animation:bob 2.2s ease-in-out infinite}
 .scroll-hint.hide{opacity:0;transform:translate(-50%,10px)}
 
 /* ════════════════ SCREEN 2 — fly-to-cart ghost ════════════════ */
